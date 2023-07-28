@@ -41,11 +41,21 @@ public class Tigo {
        return false;
     }
     
+    public double pagoPlan(int numeroTel, int mins,int msgs) {
+        for (Plan Pl : planes) {
+            if (Pl.getNumerodetelefono().equals(numeroTel)) {
+                return Pl.pagoMensual(mins, msgs);
+            }
+        }
+        return 0.0;
+    }
+    
     public void lista(){
         for(Plan pl : planes){
             
                     
         }
     }
+    
     
 }
