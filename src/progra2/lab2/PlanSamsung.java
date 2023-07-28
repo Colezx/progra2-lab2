@@ -18,8 +18,6 @@ public class PlanSamsung extends Plan {
         super(numerodetelefono, numerodecliente);
     }
     
-    
-    
     @Override
     public double pagoMensual(int mins, int msgs){
         int minut,messages;

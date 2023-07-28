@@ -51,11 +51,21 @@ public class Tigo {
     }
     
     public void lista(){
+        int ciphone = 0,csamsung=0;
         for(Plan pl : planes){
-            
-                    
+            pl.imprimir();
+            if(pl instanceof PlanIphone){
+                ciphone++;
+            } else if (pl instanceof PlanSamsung){
+                csamsung++;
+            }
         }
+        System.out.println("En el arreglo se encuentran los siguientes tipos: \nPlanes de iphone: "+ciphone +"\nPlanes de samsung: "+csamsung);
     }
+    
+    
+    
+    
     
     
 }

@@ -20,8 +20,6 @@ public class PlanIphone extends Plan {
         super(numerodetelefono, numerodecliente);
     }
     
-    
-    
     public double pagoMensual (int mins, int msgs){
         double Internet5G = 22.0;
         double costoMins = 0.4 * mins;
