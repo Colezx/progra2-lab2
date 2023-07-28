@@ -15,6 +15,12 @@ public class PlanIphone extends Plan {
         super(numerodecliente, numerodetelefono);
         this.email = email;
     }
+
+    public PlanIphone(String numerodetelefono, String numerodecliente) {
+        super(numerodetelefono, numerodecliente);
+    }
+    
+    
     
     public double pagoMensual (int mins, int msgs){
         double Internet5G = 22.0;

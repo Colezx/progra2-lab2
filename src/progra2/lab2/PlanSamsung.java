@@ -13,6 +13,12 @@ public class PlanSamsung extends Plan {
         this.Pin = Pin;
         this.bbm = new ArrayList();
     }
+
+    public PlanSamsung(String numerodetelefono, String numerodecliente) {
+        super(numerodetelefono, numerodecliente);
+    }
+    
+    
     
     @Override
     public double pagoMensual(int mins, int msgs){

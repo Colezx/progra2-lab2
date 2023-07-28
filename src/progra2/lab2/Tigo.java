@@ -33,12 +33,19 @@ public class Tigo {
     public boolean busqueda(int numeroTel, String datoExtra, String tipo){
         
        for (Plan pl : planes){
-           if(pl.getNumerodetelefono().equals(numeroTel) || pl. || plsamsung.getPin().equals(datoExtra))
+         PlanSamsung plsamsung = new PlanSamsung(String.valueOf(numeroTel),datoExtra);
+         PlanIphone pliphone = new PlanIphone (String.valueOf(numeroTel),datoExtra);
+           if(pl.getNumerodetelefono().equals(numeroTel) || plsamsung.getPin().equals(datoExtra) || pliphone.getEmail().equals(datoExtra))
                return true;
-           
        }
        return false;
     }
     
+    public void lista(){
+        for(Plan pl : planes){
+            
+                    
+        }
+    }
     
 }
