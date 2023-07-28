@@ -15,13 +15,30 @@ public class Tigo {
     }
     
     private void AgregarPlan(int count, int numeroTel, String nombre, String extra, String tipo){
-        if(planes.get(count).toString().isEmpty()){
-            Plan info= new Plan(numeroTel,nombre);
-            planes.add(count,info);
+        if(tipo.equals("Iphone")||tipo.equals("Samsung")){
+            if(tipo.equals("Iphone")){
+                if(planes.get(count).toString().isEmpty()){
+                        Plan iphone= new PlanIphone(String.valueOf(numeroTel), nombre, extra);
+                        planes.add(count,iphone);
+                } 
+            }else if (tipo.equals("Samsung")){
+                if(planes.get(count).toString().isEmpty()){
+                    Plan samsung = new PlanSamsung(String.valueOf(numeroTel),nombre,extra);
+                    planes.add(count,samsung);
+                }
+            } 
         }
     }
     
-    
+    public boolean busqueda(int numeroTel, String datoExtra, String tipo){
+        
+       for (Plan pl : planes){
+           if(pl.getNumerodetelefono().equals(numeroTel) || pl. || plsamsung.getPin().equals(datoExtra))
+               return true;
+           
+       }
+       return false;
+    }
     
     
 }
