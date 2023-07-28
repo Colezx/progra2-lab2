@@ -63,9 +63,15 @@ public class Tigo {
         System.out.println("En el arreglo se encuentran los siguientes tipos: \nPlanes de iphone: "+ciphone +"\nPlanes de samsung: "+csamsung);
     }
     
-    
-    
-    
-    
-    
+    public void agregaramigo(int numeroTel, String pin){
+        for(Plan pl : planes){
+            if(pl instanceof PlanSamsung){
+                if(pl.getNumerodetelefono().equals(numeroTel)){
+                   PlanSamsung planSamsung = (PlanSamsung) pl;
+                   planSamsung.agregarPinAmigo(pin);
+                }
+            }
+        }
+    }
+   
 }
