@@ -16,8 +16,8 @@ public class Tigo {
     
     private void AgregarPlan(int count, int numeroTel, String nombre, String extra, String tipo){
         if(planes.get(count).toString().isEmpty()){
-            Plan info= new Plan(numeroTel,nombre);
-            planes.add(count,info);
+//            Plan info= new Plan(numeroTel,nombre);
+//            planes.add(count,info);
         }
     }
     
