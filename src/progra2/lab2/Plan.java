@@ -28,7 +28,10 @@ public abstract class Plan {
     
     abstract double pagoMensual(int mins, int msgs);
     
-    abstract void imprimir();
+    public void imprimir(){
+        System.out.println("numerodetelefono"+numerodetelefono);
+        System.out.println("numerodecliente"+numerodecliente);
+    }
     
     
 }
